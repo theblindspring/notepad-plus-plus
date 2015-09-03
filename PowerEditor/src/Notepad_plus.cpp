@@ -2198,7 +2198,7 @@ void Notepad_plus::addHotSpot()
 	_pEditView->execute(SCI_SETTARGETSTART, startPos);
 	_pEditView->execute(SCI_SETTARGETEND, endPos);
 
-	std::vector<unsigned char> hotspotPairs;
+	std::vector<unsigned char> hotspotPairs; //= _pEditView->GetHotspotPairs();
 
 	unsigned char style_hotspot = 0;
 	unsigned char mask = INDIC1_MASK;
